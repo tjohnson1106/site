@@ -12,17 +12,17 @@ class Main extends Component {
           <h1> Bracket Factory </h1>
           <ul className="header">
             <li>
-              <NavLink href="/">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink href="/blog">Blog</NavLink>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li>
-              <NavLink href="/contact">Contact</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
           <div className="content">
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
           </div>
