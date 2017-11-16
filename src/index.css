@@ -1,35 +1,70 @@
 body {
-  background-color: #1485cc;
+  background-color: #bce0ee;
   padding: 20px;
   margin: 0;
+
+  background: #1e9fc2;
+  background: -moz-linear-gradient(left, #1e9fc2 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #1e9fc2),
+    color-stop(50%, #29b8e5),
+    color-stop(100%, #bce0ee)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #1e9fc2 0%,
+    #29b8e5 50%,
+    #bce0ee 100%
+  );
+  background: -o-linear-gradient(left, #1e9fc2 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -ms-linear-gradient(left, #1e9fc2 0%, #29b8e5 50%, #bce0ee 100%);
+  background: linear-gradient(to right, #1e9fc2 0%, #29b8e5 50%, #bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#1e9fc2",
+      endColorstr="#bce0ee",
+      GradientType=1
+    );
 }
 h1,
 h2,
 p,
 ul,
 li {
-  font-family: Helvetica, sans-serif;
+  font-family: Raleway, Courier, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 80px;
 }
 ul.header li {
   display: inline;
   list-style-type: none;
-  margin: 0;
+  position: relative;
 }
 ul.header {
-  background-color: #111;
+  background-color: #7ddbff;
   padding: 0;
+  text-align: center;
+  margin-bottom: 10px;
 }
 ul.header li a {
-  color: #fff;
-  font-weight: bold;
+  color: #c9f0ff;
+  font-weight: lighter;
   text-decoration: none;
-  padding: 20px;
+  padding: 40px;
   display: inline-block;
+  font-family: Raleway, Courier, Helvetica, sans-serif;
+
+  text-shadow: 1px 6px 25px #000000;
 }
 
 .content {
-  background-color: #fffc19;
-  padding: 20px;
+  background-color: #f8f8f8;
+  padding: 60px;
 }
 .content h2 {
   padding: 0;
@@ -38,6 +73,12 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
+.bf li {
+  text-align: left;
+}
+.navbar {
+  margin-top: 400;
+}
 .active {
-  background-color: #0099ff;
+  background-color: #3f7081;
 }

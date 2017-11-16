@@ -9,11 +9,10 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1> Bracket Factory </h1>
           <ul className="header">
             <li>
               <NavLink exact to="/">
-                Home
+                Bracket Factory
               </NavLink>
             </li>
             <li>
@@ -28,10 +27,11 @@ class Main extends Component {
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
           </div>
+          <span className="body" />
         </div>
       </HashRouter>
     );
   }
 }
-
+//insert card component
 export default Main;
